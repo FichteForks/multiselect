@@ -63,6 +63,10 @@
   max-width: 100%;
 }
 
+.multiselect-tags ~ .multiselect-placeholder {
+  padding-left: calc(var(--ms-px, 0.875rem) + var(--ms-tag-mx, 4px));
+}
+
 .multiselect-placeholder {
   color: var(--ms-placeholder-color, #9CA3AF);
 }
@@ -470,6 +474,10 @@
     padding-left: calc(1.25rem + var(--ms-px, 0.875rem) * 3);
     left: auto;
     right: 0;
+  }
+
+  .multiselect-tags ~ .multiselect-placeholder {
+    padding-right: calc(var(--ms-px, 0.875rem) + var(--ms-tag-mx, 4px));
   }
 
   .multiselect-search {
